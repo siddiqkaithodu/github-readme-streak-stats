@@ -27,7 +27,7 @@ let preview = {
     document.querySelector(".md code").innerText = md;
     // disable copy button if username is invalid
     const copyButton = document.querySelector(".copy-button");
-    copyButton.disabled = !!document.querySelectorAll("#user:invalid").length;
+    copyButton.disabled = Boolean(document.querySelectorAll("#user:invalid").length);
   },
   addProperty: function (property, value = "#DD2727FF") {
     const selectElement = document.querySelector("#properties");
